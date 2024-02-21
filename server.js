@@ -26,7 +26,7 @@ const users = []
 app.use(express.urlencoded({extended: false}))
 app.use(flash())
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: "SECRET",
     resave: false, // We wont resave the session variable if nothing is changed
     saveUninitialized: false
 }))
